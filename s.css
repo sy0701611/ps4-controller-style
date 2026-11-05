@@ -1,18 +1,12 @@
-/* 1. 强制覆盖主手柄背景并隐藏官方默认元素 */
 .controller.ds4 {
-    background: url(https://i.imgur.com/rY9jp5r.png) no-repeat center !important;
-    background-size: 806px 598px !important;
-    height: 598px !important;
-    width: 806px !important;
-    position: relative !important;
+    background: url("https://imgur.com/rY9jp5r.png") no-repeat;
+    height: 598px;
+    width: 806px;
 }
 
-/* 2. 强制覆盖扳机键 (Trigger) */
-.controller.ds4 .trigger {
-    background: url(https://i.imgur.com/PLnTNnE.png) no-repeat center !important;
-    background-size: 99px 100% !important;
-    width: 99px !important;
-    height: 100% !important;
-    position: absolute !important;
-    opacity: 1 !important; /* 测试时设为 1 方便看效果，确认没问题后再改回 0 */
+.ds4 .trigger {
+    width: 99px;
+    height: 100%;
+    background: url("https://imgur.com/PLnTNnE,png") no-repeat;
+    opacity: 0;
 }
