@@ -1,14 +1,18 @@
+/* 1. 主手柄背景 */
 .controller.ds4 {
-    background: url(https://imgur.com/rY9jp5r.png);
+    background: url(https://i.imgur.com/rY9jp5r.png) no-repeat center !important;
     height: 598px;
     width: 806px;
-    /*    margin-left: -403px;
-        margin-top: -280px;*/
+    background-size: contain;
 }
 
-.ds4 .trigger {
+/* 2. 扳机键（Trigger）样式优化 */
+.controller.ds4 .trigger {
     width: 99px;
     height: 100%;
-    background: url(https://imgur.com/PLnTNnE.png);
-    opacity: 0;
+    /* 使用直接图片链接并提高选择器权重 */
+    background: url(https://i.imgur.com/PLnTNnE.png) no-repeat center !important;
+    background-size: 100% 100%;
+    /* 测试时建议先改为 1，确认图片能看清后再改回 0 */
+    opacity: 1; 
 }
